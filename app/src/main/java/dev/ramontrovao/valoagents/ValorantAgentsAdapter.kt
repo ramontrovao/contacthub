@@ -7,14 +7,12 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.TextView
 
-class ValorantAgentsAdapter(private val context: Context, private val agentList: List<String>): BaseAdapter() {
-    private lateinit var agentName: TextView
-
+class ValorantAgentsAdapter(private val context: Context, private val agentList: List<ValorantAgent>): BaseAdapter() {
     override fun getCount(): Int {
         return agentList.size
     }
 
-    override fun getItem(position: Int): String {
+    override fun getItem(position: Int): ValorantAgent {
         return agentList[position]
     }
 
@@ -27,8 +25,10 @@ class ValorantAgentsAdapter(private val context: Context, private val agentList:
         view = LayoutInflater.from(context)
             .inflate(R.layout.agent_card, parent, false)
 
-        agentName = view.findViewById(R.id.agentName)
-        agentName.text = agentList[position]
+        val agentFound = agentList[position]
+
+        val agentNameView = view.findViewById<TextView>(R.id.agentName)
+        agentNameView.text = agentFound.getName()
 
         return view
     }

@@ -1,19 +1,19 @@
 package dev.ramontrovao.valoagents
 
-private class ValorantAgent(val id: Int, val name: String, val description: String, val imageId: String) {
-    fun getId() {
+class ValorantAgent(private val id: Int, private val name: String, private val description: String, private val imageId: String) {
+    fun getId(): Int {
         return id
     }
 
-    fun getName() {
+    fun getName(): String {
         return name
     }
 
-    fun getDescription() {
+    fun getDescription(): String {
         return description
     }
 
-    fun getImageId() {
+    fun getImageId(): String {
         return imageId
     }
 }
