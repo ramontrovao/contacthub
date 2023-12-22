@@ -1,6 +1,8 @@
 package dev.ramontrovao.valoagents
 
-class ValorantAgent(private val id: Int, private val name: String, private val description: String, private val imageId: String, private val role: String) {
+import android.graphics.drawable.Drawable
+
+class ValorantAgent(private val id: Int, private val name: String, private val description: String, private val imageRes: Int, private val role: String) {
     fun getId(): Int {
         return id
     }
@@ -13,8 +15,8 @@ class ValorantAgent(private val id: Int, private val name: String, private val d
         return description
     }
 
-    fun getImageId(): String {
-        return imageId
+    fun getImageRes(): Int {
+        return imageRes
     }
 
     fun getRole(): String {

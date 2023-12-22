@@ -33,8 +33,7 @@ class ValorantAgentsAdapter(private val context: Context, private val agentList:
         val agentImageView = view.findViewById<ImageView>(R.id.agentImage)
         agentNameView.text = agentFound.getName()
         agentRoleView.text = agentFound.getRole()
-        agentImageView.setImageResource(R.drawable.gekko)
-
+        agentImageView.setImageResource(agentFound.getImageRes())
         return view
     }
 }

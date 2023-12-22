@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.widget.ListView
 
 class MainActivity : AppCompatActivity() {
-    private val agentsList = listOf(ValorantAgent(1, "Raze", "Raze é brasileira", "raze", "Duelista"))
+    private val agentsList = listOf(ValorantAgent(1, "Raze", "Raze é brasileira", R.drawable.raze, "Duelista"))
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
