@@ -33,6 +33,7 @@
     </LinearLayout>
 
     <ImageView
+        android:id="@+id/agentImage"
         android:src="@drawable/gekko"
         android:layout_width="150dp"
         android:layout_height="150dp"

@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
+import android.widget.ImageView
 import android.widget.TextView
 
 class ValorantAgentsAdapter(private val context: Context, private val agentList: List<ValorantAgent>): BaseAdapter() {
@@ -28,7 +29,11 @@ class ValorantAgentsAdapter(private val context: Context, private val agentList:
         val agentFound = agentList[position]
 
         val agentNameView = view.findViewById<TextView>(R.id.agentName)
+        val agentRoleView = view.findViewById<TextView>(R.id.agentRole)
+        val agentImageView = view.findViewById<ImageView>(R.id.agentImage)
         agentNameView.text = agentFound.getName()
+        agentRoleView.text = agentFound.getRole()
+        agentImageView.setImageResource(R.drawable.gekko)
 
         return view
     }
