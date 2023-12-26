@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Valoagents"
+rootProject.name = "ContactHub"
 include(":app")

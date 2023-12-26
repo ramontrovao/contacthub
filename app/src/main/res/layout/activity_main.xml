@@ -8,24 +8,29 @@
     tools:context=".MainActivity">
 
     <RelativeLayout
-        android:background="#0C1824"
+        android:background="#EFEFEFEF"
         android:layout_width="match_parent"
-        android:layout_height="50dp">
+        android:layout_height="80dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="@string/app_name"
+            android:text="ContactHub"
+            android:textStyle="bold"
             android:textColor="#FF4655"
             android:textSize="18sp" />
     </RelativeLayout>
 
     <ListView
-        android:id="@+id/agentsView"
+        android:id="@+id/contactsView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#323232"
+        android:layout_height="match_parent"
+        android:background="#FAFAFA"
+        android:padding="16dp"
+        android:dividerHeight="20dp"
+        android:scrollbars="none"
+        android:divider="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
