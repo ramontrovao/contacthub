@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "dev.ramontrovao.valoagents"
+    namespace = "dev.ramontrovao.contacthub"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "dev.ramontrovao.valoagents"
+        applicationId = "dev.ramontrovao.contacthub"
         minSdk = 24
         targetSdk = 33
         versionCode = 1

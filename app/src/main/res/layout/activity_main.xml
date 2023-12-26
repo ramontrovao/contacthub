@@ -8,25 +8,25 @@
     tools:context=".MainActivity">
 
     <RelativeLayout
-        android:background="#1D1D1D"
+        android:background="#EFEFEFEF"
         android:layout_width="match_parent"
-        android:layout_height="60dp">
+        android:layout_height="80dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="VALOAGENTS"
+            android:text="ContactHub"
             android:textStyle="bold"
             android:textColor="#FF4655"
             android:textSize="18sp" />
     </RelativeLayout>
 
     <ListView
-        android:id="@+id/agentsView"
-        android:layout_width="wrap_content"
+        android:id="@+id/contactsView"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#323232"
+        android:background="#FAFAFA"
         android:padding="16dp"
         android:dividerHeight="20dp"
         android:scrollbars="none"
