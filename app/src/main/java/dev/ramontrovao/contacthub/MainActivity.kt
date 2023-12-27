@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.widget.ListView
 
 class MainActivity : AppCompatActivity() {
-    private val contactsList = listOf(Contact(1, "Eu", R.drawable.gekko, "27995785613"))
+    private val contactsList = listOf(Contact(1, "Eu", R.drawable.contact1, "27995785613"))
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
