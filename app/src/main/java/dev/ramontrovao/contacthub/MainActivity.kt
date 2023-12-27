@@ -1,8 +1,9 @@
 package dev.ramontrovao.contacthub
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
 import android.widget.ListView
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
     private val contactsList = listOf(Contact(1, "Eu", R.drawable.contact1, "27995785613"))
@@ -15,5 +16,10 @@ class MainActivity : AppCompatActivity() {
 
         val contactsAdapter = ContactsAdapter(this, contactsList)
         contactsView.adapter = contactsAdapter
+
+        contactsView.setOnClickListener {
+            val intent = Intent(this@MainActivity, ContactActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
