@@ -10,7 +10,7 @@
     <RelativeLayout
         android:background="#EFEFEFEF"
         android:layout_width="match_parent"
-        android:layout_height="80dp">
+        android:layout_height="70dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -19,7 +19,7 @@
             android:text="ContactHub"
             android:textStyle="bold"
             android:textColor="#FF4655"
-            android:textSize="18sp" />
+            android:textSize="24sp" />
     </RelativeLayout>
 
     <ListView
