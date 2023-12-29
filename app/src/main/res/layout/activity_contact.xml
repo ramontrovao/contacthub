@@ -7,6 +7,7 @@
     android:padding="18dp"
     android:orientation="vertical"
     android:gravity="center"
+    android:background="#FAFAFA"
     tools:context=".ContactActivity">
     <ImageView
         android:id="@+id/contactImage"
@@ -15,7 +16,7 @@
         android:layout_height="200dp"
         android:background="@drawable/contact_image_rounded"
         android:clipToOutline="true"
-        android:src="@drawable/contact1"/>
+        android:src="@drawable/contactman"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -34,6 +35,7 @@
                 android:text="Nome do contato"
                 android:textStyle="bold"
                 android:paddingVertical="4dp"
+                android:textColor="#323232"
                 android:background="@drawable/contact_border"
                 />
 
@@ -43,6 +45,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:textSize="24sp"
+                android:textColor="#323232"
                 android:text="Eu"
                 />
         </LinearLayout>
@@ -60,6 +63,7 @@
                 android:text="Telefone do contato"
                 android:textStyle="bold"
                 android:paddingVertical="4dp"
+                android:textColor="#323232"
                 android:background="@drawable/contact_border"
                 />
 
@@ -69,6 +73,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:textSize="24sp"
+                android:textColor="#323232"
                 android:text="+5527995785613"
                 />
         </LinearLayout>
