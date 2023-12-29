@@ -20,7 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="24sp"
-            android:textColor="#000"
+            android:textColor="#323232"
             android:textStyle="bold"
             android:text="Contact Name"
             />
@@ -30,7 +30,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="24sp"
-            android:textColor="#000"
+            android:textColor="#323232"
             android:text="Contact Number"
             />
     </LinearLayout>
