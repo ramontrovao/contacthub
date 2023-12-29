@@ -19,13 +19,12 @@ class ContactsAdapter(private val context: Context, private val contactList: Lis
 
     override fun getItemId(position: Int): Long {
 
-        return position.toLong()
+        return contactList[position].getId().toLong()
     }
 
-    override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
-        var view = convertView
-        view = LayoutInflater.from(context)
-            .inflate(R.layout.contact_card, parent, false)
+    override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
+        val inflater: LayoutInflater = LayoutInflater.from(context)
+        val view = inflater.inflate(R.layout.contact_card, parent, false)
 
         val contact = contactList[position]
 
