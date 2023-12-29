@@ -23,13 +23,12 @@
             android:textSize="24sp" />
     </RelativeLayout>
 
-    <ListView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/contactsView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#FAFAFA"
         android:paddingHorizontal="16dp"
-        android:paddingBottom="16dp"
         android:dividerHeight="20dp"
         android:scrollbars="none"
         android:divider="@android:color/transparent"
