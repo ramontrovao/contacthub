@@ -3,6 +3,8 @@ package dev.ramontrovao.contacthub
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
+import android.widget.TextView
 import android.widget.Toast
 
 class ContactActivity : AppCompatActivity() {
@@ -15,5 +17,12 @@ class ContactActivity : AppCompatActivity() {
         val contactId = intent.getLongExtra("contactId", 0)
         val contact = contactsList.find { contact -> contact.getId() == contactId.toInt() }
 
+        val contactImage = findViewById<ImageView>(R.id.contactImage)
+        val contactName = findViewById<TextView>(R.id.contactName)
+        val contactPhone = findViewById<TextView>(R.id.contactPhone)
+
+        contactImage.setImageResource(contact!!.getImage())
+        contactName.text = contact.getName()
+        contactPhone.text = contact.getPhoneNumber()
     }
 }

@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingVertical="18dp"
+    android:padding="18dp"
     android:orientation="vertical"
+    android:gravity="center"
     tools:context=".ContactActivity">
     <ImageView
         android:id="@+id/contactImage"
@@ -15,4 +16,61 @@
         android:background="@drawable/contact_image_rounded"
         android:clipToOutline="true"
         android:src="@drawable/contact1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="24dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:text="Nome do contato"
+                android:textStyle="bold"
+                android:paddingVertical="4dp"
+                android:background="@drawable/contact_border"
+                />
+
+            <TextView
+                android:id="@+id/contactName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="24sp"
+                android:text="Eu"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="24dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:text="Telefone do contato"
+                android:textStyle="bold"
+                android:paddingVertical="4dp"
+                android:background="@drawable/contact_border"
+                />
+
+            <TextView
+                android:id="@+id/contactPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="24sp"
+                android:text="+5527995785613"
+                />
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>
