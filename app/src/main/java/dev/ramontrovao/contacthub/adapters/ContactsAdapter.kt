@@ -1,4 +1,4 @@
-package dev.ramontrovao.contacthub
+package dev.ramontrovao.contacthub.adapters
 
 import android.content.Intent
 import android.view.LayoutInflater
@@ -7,6 +7,9 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import dev.ramontrovao.contacthub.models.Contact
+import dev.ramontrovao.contacthub.ContactActivity
+import dev.ramontrovao.contacthub.R
 
 class ContactsAdapter(private val contactList: List<Contact>): RecyclerView.Adapter<ContactsAdapter.ViewHolder>() {
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {

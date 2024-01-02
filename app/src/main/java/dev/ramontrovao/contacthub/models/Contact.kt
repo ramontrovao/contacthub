@@ -1,4 +1,4 @@
-package dev.ramontrovao.contacthub
+package dev.ramontrovao.contacthub.models
 
 class Contact(private val id: Int, private val name: String, private val image: Int, private val phoneNumber: String) {
     fun getId(): Int {
