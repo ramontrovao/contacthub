@@ -29,6 +29,7 @@
             android:layout_height="200dp"
             android:background="@drawable/contact_image_rounded"
             android:clipToOutline="true"
+            android:contentDescription="@string/contact_image"
             android:src="@drawable/contact1"/>
 
         <LinearLayout
