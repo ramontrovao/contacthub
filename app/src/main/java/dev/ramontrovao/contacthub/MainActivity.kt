@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import dev.ramontrovao.contacthub.adapters.ContactsAdapter
-import dev.ramontrovao.contacthub.utils.getContactList
+import dev.ramontrovao.contacthub.utils.getContactsList
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         setSupportActionBar(findViewById(R.id.main_toolbar))
 
-        val contactsList = getContactList()
+        val contactsList = getContactsList()
         val contactsAdapter = ContactsAdapter(contactsList)
         val contactsView = findViewById<RecyclerView>(R.id.contactsView)
 

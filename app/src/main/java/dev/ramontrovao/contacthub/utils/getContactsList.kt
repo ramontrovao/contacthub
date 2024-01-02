@@ -3,7 +3,7 @@ package dev.ramontrovao.contacthub.utils
 import dev.ramontrovao.contacthub.models.Contact
 import dev.ramontrovao.contacthub.R
 
-fun getContactList(): List<Contact> {
+fun getContactsList(): List<Contact> {
     val contactsList = mutableListOf<Contact>()
 
     val contactImages = listOf(R.drawable.contactman, R.drawable.contactgirl)
