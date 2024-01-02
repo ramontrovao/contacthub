@@ -27,6 +27,7 @@
             android:layout_gravity="center"
             android:layout_width="200dp"
             android:layout_height="200dp"
+            android:contentDescription="@string/contact_image"
             android:background="@drawable/contact_image_rounded"
             android:src="@drawable/contact1"/>
 
