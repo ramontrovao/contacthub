@@ -22,7 +22,7 @@
             android:textSize="24sp"
             android:textColor="#323232"
             android:textStyle="bold"
-            android:text="Contact Name"
+            android:text="@string/contact_name_mock"
             />
 
         <TextView
@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:textSize="24sp"
             android:textColor="#323232"
-            android:text="Contact Number"
+            android:text="@string/contact_phone_mock"
             />
     </LinearLayout>
 
@@ -43,9 +43,9 @@
             android:id="@+id/contactImage"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:contentDescription="Contact Image"
+            android:contentDescription="@string/contact_image"
+            android:src="@drawable/contact1"
             android:background="@drawable/contact_image_rounded"
-            android:clipToOutline="true"
             />
     </RelativeLayout>
 

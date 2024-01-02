@@ -28,6 +28,7 @@
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:background="@drawable/contact_image_rounded"
+            android:clipToOutline="true"
             android:src="@drawable/contact1"/>
 
         <LinearLayout
@@ -44,7 +45,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="24sp"
-                    android:text="@string/contact_name"
+                    android:text="Nome do contato"
                     android:textStyle="bold"
                     android:paddingVertical="4dp"
                     android:textColor="#323232"
@@ -58,7 +59,7 @@
                     android:layout_marginTop="8dp"
                     android:textSize="24sp"
                     android:textColor="#323232"
-                    android:text="@string/contact_name_mock"
+                    android:text="Eu"
                     />
             </LinearLayout>
 
@@ -72,7 +73,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="24sp"
-                    android:text="@string/contact_phone"
+                    android:text="Telefone do contato"
                     android:textStyle="bold"
                     android:paddingVertical="4dp"
                     android:textColor="#323232"
@@ -86,7 +87,7 @@
                     android:layout_marginTop="8dp"
                     android:textSize="24sp"
                     android:textColor="#323232"
-                    android:text="@string/contact_phone_mock"
+                    android:text="+5527995785613"
                     />
             </LinearLayout>
         </LinearLayout>
