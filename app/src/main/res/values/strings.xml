@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">ContactHub</string>
+    <string name="contact_name">Contact name</string>
+    <string name="contact_phone">Contact phone</string>
+    <string name="contact_image">Contact Image</string>
+    <string name="contact_phone_mock">(00) 00000–00000</string>
+    <string name="contact_name_mock">Contact</string>
 </resources>

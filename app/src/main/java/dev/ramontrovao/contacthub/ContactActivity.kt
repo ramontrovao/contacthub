@@ -18,7 +18,6 @@ class ContactActivity : AppCompatActivity() {
         val contactImage = intent.getIntExtra("contactImage", 0)
         val contactName = intent.getStringExtra("contactName")
         val contactPhone = intent.getStringExtra("contactPhone")
-
         supportActionBar?.title = contactName
 
         val contactImageView = findViewById<ImageView>(R.id.contactImage)
