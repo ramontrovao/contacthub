@@ -10,7 +10,7 @@ fun getContactsList(): List<Contact> {
     val contactPhones = listOf("27995785114", "27995785114", "27994785231", "27991314159", "27991285093", "31992224093")
 
     for (i in 1..10000) {
-        val contactToAdd = Contact(i, "Contato $i", contactImages.random(), contactPhones.random())
+        val contactToAdd = Contact(i, "Contact $i", contactImages.random(), contactPhones.random())
 
         contactsList.add(contactToAdd)
     }
