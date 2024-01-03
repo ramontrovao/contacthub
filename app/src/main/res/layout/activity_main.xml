@@ -19,7 +19,7 @@
         android:id="@+id/contactsView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#FAFAFA"
+        android:background="@color/background"
         android:paddingHorizontal="16dp"
         android:dividerHeight="20dp"
         android:scrollbars="none"
