@@ -21,7 +21,7 @@
         android:padding="18dp"
         android:orientation="vertical"
         android:gravity="center"
-        android:background="#FAFAFA">
+        android:background="@color/background">
         <ImageView
             android:id="@+id/contactImage"
             android:layout_gravity="center"
@@ -46,10 +46,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="24sp"
-                    android:text="Nome do contato"
+                    android:text="@string/contact_name"
                     android:textStyle="bold"
                     android:paddingVertical="4dp"
-                    android:textColor="#323232"
+                    android:textColor="@color/gray"
                     android:background="@drawable/contact_border"
                     />
 
@@ -59,8 +59,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:textSize="24sp"
-                    android:textColor="#323232"
-                    android:text="Eu"
+                    android:textColor="@color/gray"
+                    android:text="@string/contact_name_mock"
                     />
             </LinearLayout>
 
@@ -74,10 +74,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="24sp"
-                    android:text="Telefone do contato"
+                    android:text="@string/contact_phone"
                     android:textStyle="bold"
                     android:paddingVertical="4dp"
-                    android:textColor="#323232"
+                    android:textColor="@color/gray"
                     android:background="@drawable/contact_border"
                     />
 
@@ -87,8 +87,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:textSize="24sp"
-                    android:textColor="#323232"
-                    android:text="+5527995785613"
+                    android:textColor="@color/gray"
+                    android:text="@string/contact_phone_mock"
                     />
             </LinearLayout>
         </LinearLayout>
